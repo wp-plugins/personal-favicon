@@ -3,7 +3,7 @@
 Plugin Name: Personal Favicon
 Plugin URI: http://www.subotica.in.rs/2009/09/25/wp-plugin-personal-favicon/
 Description: Personal Favicon is plugin that enable to customize favicon for your Blog.
-Version: 1.1
+Version: 1.12
 Author: Dejan Major - mangup
 Author URI: http://www.subotica.in.rs/
 */
@@ -24,7 +24,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-$ver= '1.0';
+$ver= '1.12';
 
 function personal_setup_menu() {
 	if (function_exists('current_user_can')) {
@@ -58,19 +58,7 @@ function personal_setup_page(){
 	?>
 		<div class="wrap">
 		<h2><?php echo __('Personal FavIcon Setup Page'); ?></h2>
-					<table class="form-table">
-					<tr valign="top">
-				<th scope="row"><?php _e('If You like this plugin, 	donate beer for the author!') ?></th>
-				<td>
-				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="11259488">
-<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</td>			
-			</tr>
-			</table>
+
 		<form method="post" action="">
 		
 		<table class="form-table">
@@ -107,6 +95,28 @@ function personal_setup_page(){
 		</div>
 		</form> 
 		
+		<table class="form-table">
+					<tr valign="top">
+				<th scope="row"><?php _e('If You like this plugin, 	donate beer for the author!') ?></th>
+				<td>
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="11259488">
+<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</td>			
+			</tr>
+			</table>
+			<!-- Donators -->
+			<h2>Donators:</h2>
+			<table class="form-table">
+			<tr valign="top">
+			<th scope="row"><a href="http://www.kuvajmo-blogovski.com" target="_blank" title="Visit Blog">Glamocanin Sanja</a></th>
+			<td>$3</td>
+			</tr>
+			</table>
+			<!-- Donators End -->
        		
 	</div>
 	<?php	
