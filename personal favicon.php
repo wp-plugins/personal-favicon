@@ -3,7 +3,7 @@
 Plugin Name: Personal Favicon
 Plugin URI: http://www.subotica.in.rs/2009/09/25/wp-plugin-personal-favicon/
 Description: Personal Favicon is plugin that enable to customize favicon for your Blog.
-Version: 1.12
+Version: 1.2
 Author: Dejan Major - mangup
 Author URI: http://www.subotica.in.rs/
 */
@@ -24,7 +24,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-$ver= '1.12';
+$ver= '1.2';
 
 function personal_setup_menu() {
 	if (function_exists('current_user_can')) {
